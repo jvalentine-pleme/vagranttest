@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 Vagrant.configure("2") do |config|
-  config.vm.provision "shell"
+  config.vm.provision "shell", inline: "echo Configuring"
   
   config.vm.define "web" do |web|
     web.vm.box = "ubuntu/trusty64"
