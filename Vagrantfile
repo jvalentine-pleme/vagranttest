@@ -4,11 +4,11 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell"
   
   config.vm.define "web" do |web|
-    web.vm.box = "web"
+    web.vm.box = "ubuntu/trusty64"
   end
   
   config.vm.define "middleware" do |middleware|
-    middleware.vm.box = "middleware"
+    middleware.vm.box = "ubuntu/trusty64"
   end
   
 end
